@@ -662,8 +662,8 @@ export default function GiftWebsite() {
     <div className="min-h-screen bg-gradient-to-br from-pink-50 via-purple-50 to-blue-50">
       {/* Header */}
       <header className="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center space-x-2">
+        <div className="container mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-0">
+          <div className="flex items-center space-x-2 mb-2 sm:mb-0 justify-center w-full sm:w-auto">
             <div className="w-10 h-10 bg-gradient-to-r from-pink-500 to-purple-500 rounded-lg flex items-center justify-center">
               <Gift className="w-6 h-6 text-white" />
             </div>
@@ -671,7 +671,7 @@ export default function GiftWebsite() {
               Our little knots
             </span>
           </div>
-          <div className="flex items-center space-x-4">
+          <div className="flex flex-col sm:flex-row items-center gap-2 w-full sm:w-auto">
             <Button
               onClick={() => setShowFilters(!showFilters)}
               variant="outline"
@@ -1352,7 +1352,7 @@ export default function GiftWebsite() {
       {/* Footer */}
       <footer className="bg-gradient-to-r from-pink-600 to-purple-600 text-white py-12">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center md:text-left">
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
@@ -1393,7 +1393,7 @@ export default function GiftWebsite() {
 
             <div>
               <h3 className="font-semibold mb-4">Connect With Us</h3>
-              <div className="flex space-x-4 mb-4">
+              <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 mb-4 items-center justify-center">
                 <Button
                   size="sm"
                   variant="outline"
@@ -1418,7 +1418,7 @@ export default function GiftWebsite() {
                   <Facebook className="w-4 h-4" />
                 </Button>
               </div>
-              <div className="space-y-2 text-pink-100 text-sm">
+              <div className="space-y-2 text-pink-100 text-sm flex flex-col items-center md:items-start">
                 <div className="flex items-center">
                   <Phone className="w-4 h-4 mr-2" />
                   <span>+91 {whatsappNumber}</span>
