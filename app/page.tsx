@@ -662,8 +662,8 @@ export default function GiftWebsite() {
     <div className="min-h-screen bg-gradient-to-br from-pink-50 via-purple-50 to-blue-50">
       {/* Header */}
       <header className="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-0">
-          <div className="flex items-center space-x-2 mb-2 sm:mb-0 justify-center w-full sm:w-auto">
+        <div className="container mx-auto px-4 py-2 flex flex-col sm:flex-row items-center justify-between gap-1 sm:gap-0">
+          <div className="flex items-center space-x-2 mb-0 sm:mb-0 justify-center w-full sm:w-auto">
             <div className="w-10 h-10 bg-gradient-to-r from-pink-500 to-purple-500 rounded-lg flex items-center justify-center">
               <Gift className="w-6 h-6 text-white" />
             </div>
@@ -671,11 +671,11 @@ export default function GiftWebsite() {
               Our little knots
             </span>
           </div>
-          <div className="flex flex-col sm:flex-row items-center gap-2 w-full sm:w-auto">
+          <div className="flex flex-row flex-wrap items-center gap-1 w-full sm:w-auto justify-center sm:justify-end">
             <Button
               onClick={() => setShowFilters(!showFilters)}
               variant="outline"
-              className="border-pink-300 text-pink-600 hover:bg-pink-50"
+              className="border-pink-300 text-pink-600 hover:bg-pink-50 px-3 py-1 text-sm"
             >
               <Filter className="w-4 h-4 mr-2" />
               Filter
@@ -683,7 +683,7 @@ export default function GiftWebsite() {
             <Button
               onClick={() => setShowCart(!showCart)}
               variant="outline"
-              className="relative border-pink-300 text-pink-600 hover:bg-pink-50"
+              className="relative border-pink-300 text-pink-600 hover:bg-pink-50 px-3 py-1 text-sm"
             >
               <ShoppingCart className="w-4 h-4 mr-2" />
               Cart
@@ -693,7 +693,7 @@ export default function GiftWebsite() {
                 </Badge>
               )}
             </Button>
-            <Button onClick={handleQuickChat} className="bg-green-500 hover:bg-green-600 text-white">
+            <Button onClick={handleQuickChat} className="bg-green-500 hover:bg-green-600 text-white px-3 py-1 text-sm">
               <MessageCircle className="w-4 h-4 mr-2" />
               Quick Chat
             </Button>
